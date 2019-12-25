@@ -152,13 +152,20 @@ a, a:hover, a:active{
 }
 
 #header{
-	font-size: 1.35rem;
-	font-weight: 500;
 	padding: 0.75rem 0;
 }
 
 #header .row, section .row{
 	align-items: center;
+}
+
+#header .headertext{
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
+#header .headerright{
+	text-align: right;
 }
 
 section .row{
@@ -201,7 +208,7 @@ p{
 }
 
 #final .fixedcontainer{
-	min-height: 65vh;
+	min-height: 85vh;
 	text-align: center;
 	display: flex;
 	flex-flow: column;
@@ -219,6 +226,14 @@ p{
 	font-weight: 500;
 }
 
+#footer{
+	padding: 2.5rem 1.5rem;
+}
+
+#footer a{
+	color: #FFFFFF;
+}
+
 @media only screen and (max-width: 576px){
 	section .row{
 		padding: 3rem 1.5rem;
@@ -232,4 +247,80 @@ p{
 
 .redheart{
 	color: #e8121c;
+}
+
+/* Sidenav */
+
+.menubutton {
+	background: #6201ED;
+	color: white;
+	width: 4rem;
+	height: 4rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	position: fixed;
+	z-index: 1000;
+	bottom: 2rem;
+	right: 1.5rem;
+	cursor: pointer;
+	box-shadow: 0 0.1875rem 0.375rem rgba(0, 0, 0, 0.16),
+		0 0.1875rem 0.375rem rgba(0, 0, 0, 0.23);
+}
+
+.menubutton:active {
+	background-color: transparent;
+}
+
+/* Sidemenu */
+
+.sidenav {
+	height: 100%;
+	width: 0;
+	color: white;
+	position: fixed;
+	z-index: 1001;
+	top: 0;
+	right: 0;
+	background-color: #000000;
+	overflow-x: hidden;
+	padding-top: 3.75rem;
+	transition: 0.5s;
+	text-align: center;
+	opacity: 0.95;
+}
+
+.sidenav a {
+	padding: 1rem 0;
+	text-decoration: none;
+	font-size: 1rem;
+	text-align: center;
+	color: white;
+	display: block;
+	transition: 0.3s;
+}
+
+.sidenav a:hover {
+	color: #2d93f8;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 1rem;
+	font-size: 1.8rem;
+}
+
+.horizontalline-container{
+	padding: 0.5rem;
+	display: flex;
+	justify-content: center;
+	margin-top: 0.33rem;
+}
+
+.horizontal{
+	background: white;
+	width: 70%;
+	height: 0.15rem;
 }

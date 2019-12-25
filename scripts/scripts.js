@@ -14,3 +14,21 @@ const MINTIMEGAP = 80;
 		}
 	}, MINTIMEGAP);
 })();
+
+const openSidenav = () => {
+	let sidenavNode = document.getElementById("sidenav");
+
+	if (!sidenavNode) throw new Error(NODEERROR);
+
+	if (screen.width > 500) {
+		sidenavNode.style.width = "15.625rem";
+	} else sidenavNode.style.width = "100%";
+};
+
+const closeSidenav = () => {
+	let sidenavNode = document.getElementById("sidenav");
+
+	if (!sidenavNode) throw new Error(NODEERROR);
+
+	sidenavNode.style.width = "0";
+};

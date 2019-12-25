@@ -15,6 +15,7 @@
 		<meta name="theme-color" content="#6201ED" />
 
 		<!-- Styles -->
+		<link rel="icon" href="files/favicon.ico" />
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
@@ -36,9 +37,75 @@
 		>
 		<div class="topband"></div>
 		<header id="header">
-			<div class="fixedcontainer">
-				<i class="fas fa-campground fa-lg"></i>
-				&nbsp; Hobnob
+			<div class="fixedcontainer row">
+				<span class="headertext">
+					<i class="fas fa-campground fa-lg"></i>
+					&nbsp; Hobnob
+				</span>
+				<div class="menubutton" onclick="openSidenav()">
+					<i class="fas fa-bars fa-lg"></i>
+				</div>
+			</div>
+			<!-- Sidenav -->
+			<div id="sidenav" class="sidenav">
+				<a
+					href="javascript:void(0)"
+					aria-label="Close"
+					class="closebtn"
+					onclick="closeSidenav()"
+					>&times;</a
+				>
+				<a
+					href="#"
+					onclick="closeSidenav()"
+					aria-label="What is Hobnob?"
+					>What is Hobnob?</a
+				>
+				<a
+					href="#theproblem"
+					onclick="closeSidenav()"
+					aria-label="The Problem"
+					>The Problem!</a
+				>
+				<a
+					href="#thesolution"
+					onclick="closeSidenav()"
+					aria-label="The Solution"
+					>The Solution!</a
+				>
+				<a
+					href="#collaboration"
+					onclick="closeSidenav()"
+					aria-label="Collaboration"
+					>Collaboration</a
+				>
+				<a
+					href="#security"
+					onclick="closeSidenav()"
+					aria-label="Security and Privacy"
+					>Security + Privacy</a
+				>
+				<a
+					href="#support"
+					onclick="closeSidenav()"
+					aria-label="Support"
+					>Support</a
+				>
+				<a
+					href="#infra"
+					onclick="closeSidenav()"
+					aria-label="Infrastructure"
+					>Infrastructure</a
+				>
+				<a
+					href="#contact"
+					onclick="closeSidenav()"
+					aria-label="Contact"
+					>Contact</a
+				>
+				<div class="horizontalline-container">
+					<div class="horizontal"></div>
+				</div>
 			</div>
 		</header>
 		<section id="intro">
@@ -226,25 +293,35 @@
 			<div class="fixedcontainer">
 				<div class="priceheading">
 					All the above, for a very small price.
-					<br/>
+					<br />
 					Just contact us :
 				</div>
 				<div class="contact">
 					<div class="contact-button">
 						<a href="mailto:sayhobnob@gmail.com">
-							<i class="fas fa-envelope fa-lg"></i> &nbsp;sayhobnob@gmail.com
+							<i class="fas fa-envelope fa-lg"></i>
+							&nbsp;sayhobnob@gmail.com
 						</a>
 					</div>
-					<br/>
+					<br />
 					<div class="contact-button">
 						<a href="tel:+91-6263371219">
-							<i class="fas fa-phone fa-lg"></i> &nbsp;+91 - 6263371219
+							<i class="fas fa-phone fa-lg"></i> &nbsp;+91 -
+							6263371219
 						</a>
 					</div>
 				</div>
 			</div>
 		</section>
-		<footer id="footer"></footer>
+		<footer id="footer">
+			A Product By
+			<a
+				href="https://deveshk.me/"
+				target="_blank"
+				rel="noreferrer noopener"
+				>Devesh Kumar</a
+			>.
+		</footer>
 
 		<script type="text/javascript" src="scripts/scripts.js" defer></script>
 	</body>
