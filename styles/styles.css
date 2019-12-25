@@ -103,6 +103,42 @@ body {
 	padding: 0;
 }
 
+a, a:hover, a:active{
+	text-decoration: none;
+}
+
+.contact{
+	text-align: center;
+}
+
+.contact-button{
+	padding: 1rem;
+	border-radius: 0.35rem;
+	border: 0.15rem solid #6201ED;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
+	margin: 1rem;
+	transition: 0s;
+}
+
+.contact-button a{
+	color: #212121;
+}
+
+.contact-button i{
+	transition: 0s;
+}
+
+.contact-button:hover{
+	background: #6201ED;
+}
+
+.contact-button:hover a{
+	color: #FFFFFF;
+}
+
 .topband {
 	background: #6201ed;
 	height: 0.35rem;
@@ -159,9 +195,28 @@ p{
 	line-height: 1.85;
 }
 
-#theproblem, #collaboration, #support{
+#theproblem, #collaboration, #support, #final{
 	background: #ffffff;
 	color: #21252D;
+}
+
+#final .fixedcontainer{
+	min-height: 65vh;
+	text-align: center;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+}
+
+#final .fixedcontainer .row{
+	padding: 2rem 1rem;
+	min-height: auto;
+}
+
+#final .priceheading{
+	font-size: 1.5rem;
+	text-transform: capitalize;
+	font-weight: 500;
 }
 
 @media only screen and (max-width: 576px){
