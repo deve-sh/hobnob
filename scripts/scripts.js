@@ -15,6 +15,19 @@ const MINTIMEGAP = 80;
 	}, MINTIMEGAP);
 })();
 
+(() => {
+	let anchors = document.getElementsByTagName("a");
+
+	for(let i in anchors){
+		if(anchors[i].hash){
+			anchors[i].addEventListener("click", (e) => {
+				e.preventDefault();
+				scrollToElement(anchors[i].hash);
+			});
+		}
+	}
+})();
+
 const openSidenav = () => {
 	let sidenavNode = document.getElementById("sidenav");
 
@@ -32,3 +45,18 @@ const closeSidenav = () => {
 
 	sidenavNode.style.width = "0";
 };
+
+/* Smooth scroll to anchor links. */
+
+const scrollToElement = (elementSelector = "") => {
+	let element = document.querySelector(elementSelector);
+
+	if(!element) throw new Error(NODEERROR);
+
+	const top = element.getBoundingClientRect().top + window.pageYOffset
+
+	window.scrollTo({
+	  top, // scroll so that the element is at the top of the view
+	  behavior: 'smooth' // smooth scroll
+	})
+}
