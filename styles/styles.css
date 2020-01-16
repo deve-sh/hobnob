@@ -164,6 +164,11 @@ a, a:hover, a:active{
 	font-weight: 500;
 }
 
+#header .applogo{
+	max-width: 2rem;
+	margin-top: -0.65rem;
+}
+
 #header .headerright{
 	text-align: right;
 }
