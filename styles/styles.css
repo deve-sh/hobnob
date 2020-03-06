@@ -220,6 +220,7 @@ p{
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
+	align-items: center;
 }
 
 #final .fixedcontainer .row{
@@ -407,4 +408,28 @@ p{
   background-color: #aaa;
   margin: 3px 0;
   display: block;
+}
+
+/* Contact Form at the end. */
+.contactform{
+	min-width: 80%;
+	border-radius: 0.35rem;
+	padding: 1.5rem;
+	border: 0.125rem solid #cfcfcf;
+	text-align: left;
+}
+
+.contactform textarea{
+	resize: none;
+}
+
+.contactform .heading{
+	color: #212121;
+	font-weight: 600;
+	font-size: 1.125rem;
+	letter-spacing: 0.1rem;
+	margin: 0 0 0.675rem;
+	padding: 0.125rem 0;
+	border-bottom: 0.125rem solid #212121;
+	display: inline-block;
 }
