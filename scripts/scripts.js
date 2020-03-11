@@ -85,15 +85,11 @@ const scrollToElement = (elementSelector = "") => {
 							// Adding percentage to the tooltips.
 							let dataLabel =
 									" " + data.labels[tooltipItem.index],
-								number = (
+								number =
 									data.datasets[tooltipItem.datasetIndex]
-										.data[tooltipItem.index]
-								);
+										.data[tooltipItem.index];
 
-							let value =
-								" : " +
-								number +
-								` MB`;
+							let value = " : " + number + ` MB`;
 
 							if (Chart.helpers.isArray(dataLabel)) {
 								dataLabel = dataLabel.slice();
