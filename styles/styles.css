@@ -433,3 +433,8 @@ p{
 	border-bottom: 0.125rem solid #212121;
 	display: inline-block;
 }
+
+#advantages{
+	background: #efefef;
+	color: #212121;
+}
